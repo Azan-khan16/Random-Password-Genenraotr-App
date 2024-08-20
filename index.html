@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="random-password-generator-og.png">
+    <title>Random password generator app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="content-container">
+            <div class="heading-container">
+                <h2>Password Generator App</h2>
+            </div>
+            
+            <div class="wrapper">
+                <div class="input-wrapper">
+                    <input type="text"  name="" id="" disabled>
+                    <span class="copy-icon fa-regular fa-copy"></span>
+                </div>
+                <div id="customAlert" class="custom-alert">
+                    <div class="alert-content">
+                        <span class="alert-text">At least one option must be selected. The first option is being selected by default.</span>
+                        <button id="closeAlert" class="close-alert-btn">OK</button>
+                    </div>
+                </div>
+                <div class="pass-indicator"></div>
+                <div class="pass-length">
+                    <div class="details">
+                        <label for="" class="title no">Password Length</label>
+                        <span class="no"></span>
+                    </div>
+                    <input type="range" name="" id="" min="1" max="30">
+                </div>
+                <div class="pass-setting">
+                    <label for="" class="title no">Password Settings</label>
+                    <ul class="options ">
+                        <li class="option">
+                            <input type="checkbox" name="" id="lowercase" checked>
+                            <label for="lowercase" class="title point">Lowercase (a-z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" name="" id="Uppercase">
+                            <label for="Uppercase"  class="title point">Uppercase (A-Z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" name="" id="Numbers">
+                            <label for="Numbers"  class="title point">Numbers (0-9)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" name="" id="Symbols">
+                            <label for="Symbols"  class="title point">Symbols (!-$+&)</label>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="div-btn">
+                <button class="title">Generate Password</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
